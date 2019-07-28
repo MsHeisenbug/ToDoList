@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ToDoList.exe" version="1.0.0.7" publicKeyToken="bf92183b957a3db4" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ToDoList" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ToDoList.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dapper.dll" size="177664">
+      <assemblyIdentity name="Dapper" version="1.60.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2vLpGQOVROCg/vu4juSZhHHakH8x86seI8FY1WwSiBo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Model.dll" size="7680">
+      <assemblyIdentity name="Model" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Lm8D8W5CMxRePUmZMI7uA0Z2FIwXkbiAYpEXdZtHEMg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.dll" size="352256">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.111.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>of0RfUJ5GNIt3o/950WH9wrbgML8ByvF6/nkybafKTM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToDoList.exe" size="63496">
+      <assemblyIdentity name="ToDoList" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Im57g0l82zXzoZY3/yk/8LQvMDUspxtoBF3KK4OTNU8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TasksDB.db" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LG7AnAqn0wQR6+N/xwlUVLbXn3puQQZ0Bxsv4LDsW8k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ToDoList.exe.config" size="356">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dzgHFWw+fZmoUwF8hN4cbXpfwP1Wln1lsMc1xjDOb5w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x64\SQLite.Interop.dll" size="1543168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OYCa01jzIRjl7gwG2xl4xMK9Hz+/hM2Wmh+bvMbODIM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x86\SQLite.Interop.dll" size="1257472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sdGDGV850DVzMSymsjKGmy0Gst2a+454lvYe7j7ociQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-RVSD958\ms_heisenbug" issuerKeyHash="62568682acc9cc0e2cf11d12e33d6b3b9ae6e948" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Z9Z6+KHotpdYZenWTYIEPm5DooLfbRHJgPMypPFF0/g=</DigestValue></Reference></SignedInfo><SignatureValue>TrqY5dDS0LOG0TD5En1NKuR5yUXtPN4TcoF1KiJnfZD/eLGIDTl6umtf2XxUPtVZ9WwMnRpQgi1CyMvd60Lix7CryIrJa5qybBqNGSsoKVpvSWur/OpKX8Fvic9WT/kARe5VkRHgpvW7oNDvnBR0ypiS2I+fPgg1ORPmu1AWCq0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>38XxGhUDfBQv4XwqtNTh/eEFplTosbBrBzhDwblEMOEaQjm6bjA7OnCT/kniIX++JR669Vnsr7j0oJ8uE/uZtR6gJlSgpECCKx7mxDpX5XpzMrnLC1q4HDWSS1FUujo2WkKTT62+yEGm9931vmPENiDw/ZndJJ7ohSBotjsFPN0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f8d345f1a432f380c9116ddf82a2436e3e04824dd6e9655897b6e8a1f87ad667" Description="" Url=""><as:assemblyIdentity name="ToDoList.exe" version="1.0.0.7" publicKeyToken="bf92183b957a3db4" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-RVSD958\ms_heisenbug</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CX+Z4VHe6K8gWFHftqDFUCLY3WladmhLu3udXy/IdYM=</DigestValue></Reference></SignedInfo><SignatureValue>xEnmSKfePL8cHgqbxU3/xWA9kXFt9iiCafF3X1lxno36/8Cdcx+j2ymPL2K0EHPkv0a9jMaCb+hAvSqkT9o4neejFo/nj5+9//4WCnKEjHZQsJ6uwMQKjql0SJobcPHiPf1kykEBZXH2ro8vG+ZVAFuU3nKgc+iwq6nFQWkmXNA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>38XxGhUDfBQv4XwqtNTh/eEFplTosbBrBzhDwblEMOEaQjm6bjA7OnCT/kniIX++JR669Vnsr7j0oJ8uE/uZtR6gJlSgpECCKx7mxDpX5XpzMrnLC1q4HDWSS1FUujo2WkKTT62+yEGm9931vmPENiDw/ZndJJ7ohSBotjsFPN0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICCTCCAXKgAwIBAgIQadzY15POaZZLlSxwLwaGlDANBgkqhkiG9w0BAQsFADBDMUEwPwYDVQQDHjgARABFAFMASwBUAE8AUAAtAFIAVgBTAEQAOQA1ADgAXABtAHMAXwBoAGUAaQBzAGUAbgBiAHUAZzAeFw0xOTA3MjgxODA5MzBaFw0yMDA3MjgwMDA5MzBaMEMxQTA/BgNVBAMeOABEAEUAUwBLAFQATwBQAC0AUgBWAFMARAA5ADUAOABcAG0AcwBfAGgAZQBpAHMAZQBuAGIAdQBnMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDfxfEaFQN8FC/hfCq01OH94QWmVOixsGsHOEPBuUQw4RpCObpuMDs6cJP+SeIhf74lHrr1WeyvuPSgny4T+5m1HqAmVKCkQIIrHubEOlflenMyucsLWrgcNZJLUVS6OjZaQpNPrb7IQab33fW+Y8Q2IPD9md0knuiFIGi2OwU83QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJbKAutifZNDNjlSpJPL43vtQ22tcpr6azED2KJ6WWykqWwwLqmATDnCLv+UW/qI8rZfUbXR+eMadgVKMB0nN9bqax6BaLiKFvmAnRSiLwX45SV8VVrpNn6t91KxWFrpl+54xW/5age7TchyvqvLxorFUedHmP9C/town0QPMVI3</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
